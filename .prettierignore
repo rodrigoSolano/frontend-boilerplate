@@ -22,3 +22,6 @@ yarn-error.log*
 /public/workbox-*.js.*
 
 package-lock.json
+
+# unit testing
+coverage
