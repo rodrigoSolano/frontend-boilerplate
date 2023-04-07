@@ -1,6 +1,6 @@
 {
-  "name": "PWA App",
-  "short_name": "App",
+  "name": "Boilerplate de Next.js con Material UI y i18next",
+  "short_name": "boilerplate",
   "icons": [
     {
       "src": "/icons/android-chrome-192x192.png",

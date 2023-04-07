@@ -1,45 +1,34 @@
-# Material UI - Next.js example
+# Boilerplate de Next.js con Material UI y i18next
 
-## How to use
+Este es un proyecto de inicio para crear aplicaciones con Next.js utilizando Material UI y i18next.
+La aplicación también está diseñada para ser una PWA (Aplicación Web Progresiva),
+lo que significa que se puede instalar en el dispositivo del usuario y funciona offline.
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
+## Scripts
 
-<!-- #default-branch-switch -->
+Los siguientes scripts están disponibles:
 
-```sh
-curl https://codeload.github.com/mui/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/material-next
-cd material-next
-```
+- **dev**: Inicia el servidor de desarrollo de Next.js.
+- **build**: Compila la aplicación para producción.
+- **start**: Inicia la aplicación en modo producción.
+- **check**-lint: Verifica el código utilizando ESLint.
+- **check**-format: Verifica el formato del código utilizando Prettier.
+- **check**-all: Ejecuta los comandos check-lint y check-format.
+- **lint**: Verifica y corrige problemas de código utilizando ESLint.
+- **format**: Corrige el formato del código utilizando Prettier.
+- **format**-all: Ejecuta los comandos format y lint.
+- **commit**: Inicia el asistente de Git Commitizen para crear commits con un formato estandarizado.
 
-Install it and run:
+## Cómo utilizar este proyecto
 
-```sh
-npm install
-npm run dev
-```
+1. Clona este repositorio.
+2. Ejecuta yarn o npm install para instalar las dependencias.
+3. Ejecuta yarn dev o npm run dev para iniciar el servidor de desarrollo.
+4. Comienza a desarrollar tu aplicación.
 
-or:
+## Características adicionales
 
-<!-- #default-branch-switch -->
-
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/master/examples/material-next)
-
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui/material-ui/tree/master/examples/material-next)
-
-## The idea behind the example
-
-The project uses [Next.js](https://github.com/vercel/next.js), which is a framework for server-rendered React apps.
-It includes `@mui/material` and its peer dependencies, including [Emotion](https://emotion.sh/docs/introduction), the default style engine in Material UI v5.
-If you prefer, you can [use styled-components instead](https://mui.com/material-ui/guides/interoperability/#styled-components).
-
-## The Link component
-
-The [example folder](https://github.com/mui/material-ui/tree/HEAD/examples/material-next-ts) provides an adapter for the use of [Next.js's Link component](https://nextjs.org/docs/api-reference/next/link) with MUI.
-More information [in the documentation](https://mui.com/material-ui/guides/routing/#next-js).
-
-## What's next?
-
-<!-- #default-branch-switch -->
-
-You now have a working example project.
-You can head back to the documentation, continuing browsing it from the [templates](https://mui.com/material-ui/getting-started/templates/) section.
+- La aplicación utiliza la técnica de "code-splitting" de Next.js para cargar solo el código necesario en cada página, lo que resulta en tiempos de carga más rápidos.
+- Material UI proporciona un conjunto de componentes predefinidos para construir interfaces de usuario rápidas y coherentes.
+- i18next facilita la internacionalización de la aplicación.
+- El uso de Prettier y ESLint garantiza que el código se mantenga limpio y legible.

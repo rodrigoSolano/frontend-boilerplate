@@ -1,11 +1,11 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/forbid-prop-types */
-import * as React from 'react'
 import PropTypes from 'prop-types'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import createEmotionServer from '@emotion/server/create-instance'
+
 import theme, { roboto } from '../src/theme'
-import createEmotionCache from '../src/createEmotionCache'
+import createEmotionCache from '../src/utils/createEmotionCache'
 
 export default function MyDocument(props) {
   const { emotionStyleTags } = props
@@ -17,11 +17,22 @@ export default function MyDocument(props) {
         <meta name="theme-color" content={theme.palette.primary.main} />
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="emotion-insertion-point" content="" />
-        <meta name="application-name" content="PWA App" />
+        <meta
+          name="application-name"
+          content="Boilerplate de Next.js con Material UI y i18next"
+        />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="PWA App" />
-        <meta name="description" content="Best PWA App in the world" />
+        <meta
+          name="apple-mobile-web-app-title"
+          content="Boilerplate de Next.js con Material UI y i18next"
+        />
+        <meta
+          name="description"
+          content="Este es un proyecto de inicio para crear aplicaciones con Next.js utilizando Material UI y i18next.
+          La aplicación también está diseñada para ser una PWA (Aplicación Web Progresiva),
+          lo que significa que se puede instalar en el dispositivo del usuario y funciona offline."
+        />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="msapplication-config" content="/icons/browserconfig.xml" />
@@ -68,7 +79,10 @@ export default function MyDocument(props) {
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:url" content="https://yourdomain.com" />
-        <meta name="twitter:title" content="PWA App" />
+        <meta
+          name="twitter:title"
+          content="Boilerplate de Next.js con Material UI y i18next"
+        />
         <meta name="twitter:description" content="Best PWA App in the world" />
         <meta
           name="twitter:image"
@@ -76,9 +90,20 @@ export default function MyDocument(props) {
         />
         <meta name="twitter:creator" content="@creator" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="PWA App" />
-        <meta property="og:description" content="Best PWA App in the world" />
-        <meta property="og:site_name" content="PWA App" />
+        <meta
+          property="og:title"
+          content="Boilerplate de Next.js con Material UI y i18next"
+        />
+        <meta
+          property="og:description"
+          content="Este es un proyecto de inicio para crear aplicaciones con Next.js utilizando Material UI y i18next.
+          La aplicación también está diseñada para ser una PWA (Aplicación Web Progresiva),
+          lo que significa que se puede instalar en el dispositivo del usuario y funciona offline."
+        />
+        <meta
+          property="og:site_name"
+          content="Boilerplate de Next.js con Material UI y i18next"
+        />
         <meta property="og:url" content="https://yourdomain.com" />
         <meta
           property="og:image"
